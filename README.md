@@ -9,24 +9,24 @@
 ## Sort (filter, sorted, lambda)
 
 ## Functions
-```
+```python
 def foo(x):
     return x + 1
 ```
-```
+```python
 # type hints
 
 def foo(x: int) -> int:
     return x + 1
 ```
-```
+```python
 # positional arguments & keyword arguments
 from typing import Any, Tuple, List, Dict
 
 def foo(*args, **kwargs) -> Tuple[List[Any], Dict[str, Any]]:
     return args, kwargs
 ```
-```
+```python
 # restrict positional arguments
 
 def foo(*, **kwargs):
@@ -42,7 +42,7 @@ foo(a=1, b=2)
 #### Complex Recursion
 #### Tail Recursion
 ### Generators
-```
+```python
 def foo(x: int) -> int:
     for i in range(3):
         yield x + i
@@ -54,11 +54,11 @@ next(gen) -> 3
 
 for x in foo(1):
     print(x)
-1
-2
-3
+# >>> 1
+# >>> 2
+# >>> 3
 ```
-```
+```python
 def extract_product(html): Dict[str, Any]:
     return {'product': html.find('h1').text}
 
@@ -73,7 +73,7 @@ def scrape() -> Dict[str, Any]:
 
 ```
 ### Decorators
-```
+```python
 def deco(func: Callable) -> Callable:
     def wrapper(*args, **kwargs):
         print('before')
@@ -115,7 +115,7 @@ A().foo()
 ## Dunder (magic) methods
 
 ## Context Managers (with) io operations
-```
+```python
 class Foo:
     def __enter__(self):
         print('enter')
@@ -143,4 +143,5 @@ with Foo():
 
 ## Software Architectures
 ### API Gateway
+
 ### 
