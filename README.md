@@ -4,6 +4,10 @@
 
 ## Loops
 ### For
+```python
+for i in range(10):
+    print(i)
+```
 ### While
 
 ## Sort (filter, sorted, lambda)
@@ -145,3 +149,4 @@ with Foo():
 ### API Gateway
 
 ### 
+
